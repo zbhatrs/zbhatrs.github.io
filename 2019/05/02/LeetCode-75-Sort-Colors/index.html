@@ -79,16 +79,17 @@
 
 
 
-<meta name="description" content="分享技术、分享生活">
-<meta property="og:type" content="website">
-<meta property="og:title" content="ARTS践行之路">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="75 Sort ColorsLeetcode第75题： 给定一个包含红色、白色和蓝色，一共 n 个元素的数组，原地对它们进行排序，使得相同颜色的元素相邻，并按照红色、白色、蓝色顺序排列。 此题中，我们使用整数 0、 1 和 2 分别表示红色、白色和蓝色。 注意: 不能使用代码库中的排序函数来解决这道题。 示例: 12输入: [2,0,2,1,1,0]输出: [0,0,1,1,2,2] 进阶：  一">
+<meta property="og:type" content="article">
+<meta property="og:title" content="LeetCode 75 Sort Colors">
+<meta property="og:url" content="http://yoursite.com/2019/05/02/LeetCode-75-Sort-Colors/index.html">
 <meta property="og:site_name" content="ARTS践行之路">
-<meta property="og:description" content="分享技术、分享生活">
+<meta property="og:description" content="75 Sort ColorsLeetcode第75题： 给定一个包含红色、白色和蓝色，一共 n 个元素的数组，原地对它们进行排序，使得相同颜色的元素相邻，并按照红色、白色、蓝色顺序排列。 此题中，我们使用整数 0、 1 和 2 分别表示红色、白色和蓝色。 注意: 不能使用代码库中的排序函数来解决这道题。 示例: 12输入: [2,0,2,1,1,0]输出: [0,0,1,1,2,2] 进阶：  一">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-05-02T12:52:24.430Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ARTS践行之路">
-<meta name="twitter:description" content="分享技术、分享生活">
+<meta name="twitter:title" content="LeetCode 75 Sort Colors">
+<meta name="twitter:description" content="75 Sort ColorsLeetcode第75题： 给定一个包含红色、白色和蓝色，一共 n 个元素的数组，原地对它们进行排序，使得相同颜色的元素相邻，并按照红色、白色、蓝色顺序排列。 此题中，我们使用整数 0、 1 和 2 分别表示红色、白色和蓝色。 注意: 不能使用代码库中的排序函数来解决这道题。 示例: 12输入: [2,0,2,1,1,0]输出: [0,0,1,1,2,2] 进阶：  一">
 
 
 
@@ -118,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/">
+  <link rel="canonical" href="http://yoursite.com/2019/05/02/LeetCode-75-Sort-Colors/">
 
 
 
 
 
-  <title>ARTS践行之路</title>
+  <title>LeetCode 75 Sort Colors | ARTS践行之路</title>
   
 
 
@@ -143,8 +144,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -227,9 +227,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -259,9 +259,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/05/02/LeetCode-75-Sort-Colors/" itemprop="url">LeetCode 75 Sort Colors</a></h1>
+          <h1 class="post-title" itemprop="name headline">LeetCode 75 Sort Colors</h1>
         
 
         <div class="post-meta">
@@ -311,9 +309,7 @@
       
 
       
-        
-          
-            <h1 id="75-Sort-Colors"><a href="#75-Sort-Colors" class="headerlink" title="75 Sort Colors"></a>75 Sort Colors</h1><p>Leetcode第75题：</p>
+        <h1 id="75-Sort-Colors"><a href="#75-Sort-Colors" class="headerlink" title="75 Sort Colors"></a>75 Sort Colors</h1><p>Leetcode第75题：</p>
 <p>给定一个包含红色、白色和蓝色，一共 <em>n</em> 个元素的数组，<strong>原地</strong>对它们进行排序，使得相同颜色的元素相邻，并按照红色、白色、蓝色顺序排列。</p>
 <p>此题中，我们使用整数 0、 1 和 2 分别表示红色、白色和蓝色。</p>
 <p><strong>注意:</strong><br> 不能使用代码库中的排序函数来解决这道题。</p>
@@ -331,8 +327,6 @@
 <p>利用三路快排的思想，将整个区域划分为三个区间，第一个区间是0区间arr[0…zero]==0，第二个区间是存放1的区间arr[zero+1…i-1]==1，第三个区间是存放2的区间arr[two..n-1]==2：</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">sortColors</span><span class="params">(<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;&amp; nums)</span> </span>&#123;</span><br><span class="line">        <span class="comment">//时间复杂度:O(n)</span></span><br><span class="line">        <span class="comment">//空间复杂度:O(1)</span></span><br><span class="line">        <span class="keyword">int</span> zero = <span class="number">-1</span>;          <span class="comment">//[0...zero] zero区间开始是不存在的</span></span><br><span class="line">        <span class="keyword">int</span> two = nums.size();  <span class="comment">//[two..n-1] two区间开始是不存在的，随着下标的移动才构建出这两个区间</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; two; )&#123;</span><br><span class="line">            <span class="keyword">if</span>( nums[i] == <span class="number">1</span> )</span><br><span class="line">                i++;</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span> ( nums[i] == <span class="number">2</span> )&#123;</span><br><span class="line">                swap( nums[i] , nums[--two]);</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span></span><br><span class="line">            &#123;</span><br><span class="line">                assert( nums[i] == <span class="number">0</span> );</span><br><span class="line">                swap( nums[++zero], nums[i] );</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 
-          
-        
       
     </div>
     
@@ -349,155 +343,28 @@
       
 
       
-
-      
-
       
       
-        <div class="post-eof"></div>
+
       
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/07/加入ARTS打卡行动/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="zbh">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ARTS践行之路">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/04/07/加入ARTS打卡行动/" itemprop="url">加入ARTS打卡行动</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-04-07T18:47:48+08:00">
-                2019-04-07
-              </time>
+              <a href="/2019/04/07/加入ARTS打卡行动/" rel="next" title="加入ARTS打卡行动">
+                <i class="fa fa-chevron-left"></i> 加入ARTS打卡行动
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/ARTS/" itemprop="url" rel="index">
-                    <span itemprop="name">ARTS</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p>加入由技术大牛左耳耗子发起的ARTS 100天打卡学习记录，培养技术积累的习惯！</p>
-<p>​                                                哈哈哈</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -507,138 +374,11 @@
   </article>
 
 
-    
-      
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/07/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="zbh">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ARTS践行之路">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/04/07/hello-world/" itemprop="url">Hello World</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-04-07T18:36:10+08:00">
-                2019-04-07
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-          
-        
+    <div class="post-spread">
       
     </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
 
 
           </div>
@@ -646,6 +386,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -666,8 +410,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -718,6 +471,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#75-Sort-Colors"><span class="nav-number">1.</span> <span class="nav-text">75 Sort Colors</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#思路1："><span class="nav-number">1.1.</span> <span class="nav-text">思路1：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#思路2："><span class="nav-number">1.2.</span> <span class="nav-text">思路2：</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -858,6 +627,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
